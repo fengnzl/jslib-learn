@@ -1,6 +1,6 @@
 import { type } from './type'
 
-Array.from("abc");
+Array.from('abc')
 export function clone(data) {
   const t = type(data)
   if (t !== 'object' && t !== 'array') {

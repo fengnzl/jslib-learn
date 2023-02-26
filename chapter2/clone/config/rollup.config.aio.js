@@ -1,6 +1,6 @@
 import { defineConfig } from 'rollup'
 import { banner } from './rollup.cjs'
-import { getCompile } from "./getCompile.js";
+import { getCompile } from './getCompile.js'
 
 export default defineConfig({
   input: 'src/index.js',
@@ -8,7 +8,7 @@ export default defineConfig({
     file: 'dist/index.aio.js',
     format: 'umd',
     name: 'clone',
-    banner
+    banner,
   },
-  plugins: [getCompile()]
+  plugins: [getCompile()],
 })

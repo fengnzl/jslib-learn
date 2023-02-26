@@ -21,6 +21,6 @@ describe('function clone', () => {
       expect(clone()).to.equal(undefined)
       expect(clone(null)).to.equal(null)
       expect(clone(undefined)).to.equal(undefined)
-    });
-  });
-});
+    })
+  })
+})

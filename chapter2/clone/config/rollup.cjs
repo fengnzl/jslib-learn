@@ -5,5 +5,5 @@ const banner = `/*!
 */
 `
 module.exports = {
-  banner
+  banner,
 }

@@ -1,4 +1,4 @@
-import { type } from "./type";
+import { type } from './type'
 
 Array.from('abc') // ['a', 'b', 'c']
 
