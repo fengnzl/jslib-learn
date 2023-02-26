@@ -9,7 +9,8 @@
     "build:esm": "rollup -c config/rollup.config.esm.js",
     "build:aio": "rollup -c config/rollup.config.aio.js",
     "build": "rimraf dist && pnpm build:cjs && pnpm build:esm && pnpm build:aio",
-    "test": "vitest"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@vitest/coverage-c8": "^0.29.1",
     "rimraf": "^4.1.2",
     "rollup": "^3.17.2",
     "vitest": "^0.29.1"
