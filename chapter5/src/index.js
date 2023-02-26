@@ -1,5 +1,4 @@
 import { type } from './type'
-
 Array.from('abc')
 export function clone(data) {
   const t = type(data)
