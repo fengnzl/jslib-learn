@@ -27,6 +27,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
+          cache-dependency-path: pnpm-lock.yaml
       - run: pnpm prettier
       - run: pnpm lint
 
@@ -42,4 +43,5 @@ jobs:
         with:
           node-version: '16.x'
           cache: 'pnpm'
+          cache-dependency-path: pnpm-lock.yaml
       - run: pnpm run build --if-present
