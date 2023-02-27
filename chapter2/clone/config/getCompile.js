@@ -1,6 +1,6 @@
 import { babel } from '@rollup/plugin-babel'
 
-export function getCompile(opt) {
+export function getCompile() {
   return babel({
     babelrc: false, // 不使用独立的 babel 配置文件
     babelHelpers: 'bundled',
