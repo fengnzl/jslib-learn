@@ -10,15 +10,7 @@ on:
     branches: ['main']
 
 jobs:
-  install:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7.18.2
   lint:
-    needs: install
     runs-on: ubuntu-latest
 
     strategy:
@@ -27,7 +19,9 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.18.2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -40,7 +34,9 @@ jobs:
     needs: lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.18.2
       - name: Use Node.js 16.x
         uses: actions/setup-node@v3
         with:
