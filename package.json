@@ -6,7 +6,8 @@
   "scripts": {
     "prettier": "prettier -w .",
     "prepare": "husky install",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "echo build finished"
   },
   "keywords": [],
   "author": "",
