@@ -1,0 +1,19 @@
+{
+  "name": "clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build:cjs": "rollup -c config/rollup.config.js",
+    "build:esm": "rollup -c config/rollup.config.esm.js",
+    "build": "rimraf dist && pnpm build:cjs && pnpm build:esm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^4.1.2",
+    "rollup": "^3.17.3"
+  }
+}
