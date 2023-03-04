@@ -51,7 +51,7 @@ clone(createData(1000))
 // clone(createData(10000)) // 栈溢出
 clone(createData(3, 100000)) // 广度大不会栈溢出
 
-function cloneLoop(x) {
+export function cloneLoop(x) {
   const root = {}
 
   const loopList = [
