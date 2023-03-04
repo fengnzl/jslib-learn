@@ -1,0 +1,19 @@
+{
+  "name": "anypath",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "build": "rimraf dist && rollup -c rollup.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^4.3.0",
+    "rollup": "^3.18.0",
+    "vite": "^4.1.4",
+    "vitest": "^0.29.2"
+  }
+}
